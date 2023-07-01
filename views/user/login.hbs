@@ -1,0 +1,38 @@
+<section class=" text-lg-start">
+
+    <div class="container">
+        <div class="col-lg-8 m-auto">
+            <div class="card-body py-5 px-md-5">
+                <h1 class="text-center display-6">Login</h1>
+                <form action="/login" method="post">
+                    {{#if loginErr}}
+                        <p class="error text-center " style="color: red;">{{loginErr}}</p>
+                    {{/if}}
+                    <!-- Emai   <l input -->
+                        <label>Email address</label>
+                        <input type="email" id="form2Example1" name="Email" placeholder="Enter email" class="form-control" />
+
+                    <!-- Password input -->
+                        <label class="mt-2">Password</label>
+                        <input type="password" id="form2Example2" name="Password" placeholder="Password" class="form-control" />
+
+                    <div class="row mt-2">
+                        <div class="col-10">
+                            <!-- Simple link -->
+                            <a href="/signup" class="mr-auto">Create new Account?</a>
+                        </div>
+                        <div class="col-2 ">
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary  mb-4 ">Login</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Section: Design Block -->

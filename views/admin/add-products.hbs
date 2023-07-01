@@ -1,0 +1,42 @@
+<section>
+    <div class="container mt-5">
+        <form action="/admin/add-products" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <h1 class="text-center display-6">Add Product</h1>
+                <div class="col-md-12 mb-3">
+                    <label for="validationServer01">Name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" name="Name"
+                        placeholder="Name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="validationServer01">Category</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" name="Category"
+                        placeholder="Category" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="validationServer01">Price</label>
+                    <input type="number" class="form-control is-valid" id="validationServer01" name="Price"
+                        placeholder="Price" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="validationServer01">Description</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" name="Description"
+                        placeholder="Description" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="">Image</label>
+                    <input type="file" name="Image" class="form-control">
+                </div>
+            </div>
+            <button class="btn btn-success" type="submit">Submit form</button>
+        </form>
+    </div>
+</section>
